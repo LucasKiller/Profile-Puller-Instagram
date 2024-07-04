@@ -24,7 +24,7 @@ def getCreds():
 
 def makeApiCall(url, endpointParams, debug = 'no'):
 	""" 
-    Uma função para fazer chamadas a API
+    	Uma função para fazer chamadas a API
 	
 	Args:
 		url: string da url
