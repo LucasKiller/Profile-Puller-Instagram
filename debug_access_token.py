@@ -21,7 +21,7 @@ def debugAccessToken(params):
 	return makeApiCall(url, endpointParams, params['debug']) # faz a chamada da API
 
 params = getCreds() # pega as credenciais
-params['debug'] = 'yes' # set debug para sim
+params['debug'] = 'yes' # seta o debug
 response = debugAccessToken(params) # debuga o access token
 
 print("\nAcesso aos dados expira em: ") # título
