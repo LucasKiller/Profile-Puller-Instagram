@@ -1,6 +1,6 @@
 from defines import getCreds, makeApiCall
 
-def getUserPages(params) :
+def getUserPages(params):
 	""" 
 	Pega informações sobre a página do usuário
 	
@@ -23,7 +23,7 @@ params['debug'] = 'no' # seta o debug
 response = getUserPages(params) # pega a informação do debug
 
 n = 1 # contador
-for page in response['json_data']['data'] :
+for page in response['json_data']['data']:
 	print(f"\n---- FACEBOOK PAGE INFO {n} ----\n") # título
 	print("Nome da página:") # título
 	print(page['name']) # nome da página

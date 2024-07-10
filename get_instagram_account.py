@@ -1,6 +1,6 @@
 from defines import getCreds, makeApiCall
 
-def getInstagramAccount(params) :
+def getInstagramAccount(params):
 	""" 
 	Pega informações sobre a conta business do instagram
 	
@@ -20,7 +20,7 @@ def getInstagramAccount(params) :
 	return makeApiCall(url, endpointParams, params['debug']) # faz a chamada da API
 
 params = getCreds() # pega as credenciais
-params['debug'] = 'yes' # seta o debug
+params['debug'] = 'no' # seta o debug
 response = getInstagramAccount(params) # pega a informação do debug
 
 print ("\n---- INSTAGRAM ACCOUNT INFO ----\n")
