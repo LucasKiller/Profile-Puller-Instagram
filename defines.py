@@ -9,16 +9,16 @@ def getCreds():
 	"""
 
 	creds = dict() # dict para guardar as informações de credenciais
-	creds['access_token'] = 'ACCESS-TOKEN' # access token para fazer chamadas a API
-	creds['client_id'] = 'FB-APP-CLIENT-ID' # client id do facebook app
-	creds['client_secret'] = 'FB-APP-CLIENT-SECRET' # client secret do facebook app
+	creds['access_token'] = '' # access token para fazer chamadas a API
+	# creds['client_id'] = '' # client id do facebook app
+	# creds['client_secret'] = '' # client secret do facebook app
 	creds['graph_domain'] = 'https://graph.facebook.com/' # base de domínio para fazer chamadas a API
-	creds['graph_version'] = 'v6.0' # versão da API
+	creds['graph_version'] = 'v20.0' # versão da API
 	creds['endpoint_base'] = creds['graph_domain'] + creds['graph_version'] + '/' # base de endpoint para fazer chamadas a API
 	creds['debug'] = 'no' # debug mode para fazer chamadas a API
-	creds['page_id'] = 'FB-PAGE-ID' # id da página do facebook
-	creds['instagram_account_id'] = 'INSTAGRAM-BUSINESS-ACCOUNT-ID' # id da conta de negócios do instagram
-	creds['ig_username'] = 'IG-USERNAME' # nome de usuário do instagram
+	creds['page_id'] = '185311057987647' # id da página do facebook
+	creds['instagram_account_id'] = '17841410502533605' # id da conta de negócios do instagram
+	# creds['ig_username'] = 'inovv.ia' # nome de usuário do instagram
 
 	return creds
 
